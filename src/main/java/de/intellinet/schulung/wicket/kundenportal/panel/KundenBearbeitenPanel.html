@@ -1,0 +1,95 @@
+<html xmlns:wicket="http://wicket.apache.org">
+<wicket:child />
+<wicket:panel>
+
+	
+	<div wicket:id="successMessage"></div>
+	<div wicket:id="feedbackMessage"></div>
+	<form wicket:id="addNewPersonForm" id="form">
+	
+			<div class="form-group">
+					<label for="land">Anrede</label> 
+					<select class="form-control" wicket:id="anrede"> </select>
+				</div>
+		<div class="form-group">
+			<label for="name">Name</label> <input name="name" type="text"
+				class="form-control" placeholder="name" wicket:id="name" />
+		</div>
+		<div class="form-group">
+			<label for="vorname">Vorname</label> <input name="vorname"
+				type="text" class="form-control" placeholder="vorname"
+				wicket:id="vorname" />
+		</div>
+		<div class="form-group">
+			<label for="staatsangehoerigkeit">Staatsangehoerigkeit</label>
+				<select class="form-control" wicket:id="staatsangehoerigkeitSelect"> </select>
+		</div>
+		<div class="form-group">
+			<label for="geburtsort">Geburtsort</label> <input name="geburtsort"
+				type="text" class="form-control" placeholder="geburtsort"
+				wicket:id="geburtsort" />
+		</div>
+		<div class="form-group">
+			<label for="geburtsdatum">Geburtsdatum</label> <input
+				name="geburtsdatum" type="date" class="form-control"
+				placeholder="yyyy-MM-dd" wicket:id="geburtsdatum" />
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+
+				<h3>Adresse</h3>
+				<!-- 	<select wicket:id="laenderSelect" > </select> -->
+				
+				<div class="row form-row">
+				<div class="form-group col-md-6 ">
+					<label for="strasse">Strasse</label> <input name="strasse"
+						type="text" class="form-control" placeholder="strasse"
+						wicket:id="strasse" />
+				</div>
+				<div class="form-group col-md-6">
+					<label for="hausnummer">Hausnummer</label> <input name="hausnummer"
+						type="text" class="form-control" placeholder="hausnummer"
+						wicket:id="hausnummer" />
+				</div>
+				</div>
+				<div class="row form-row">
+				<div class="form-group col-md-6">
+					<label for="plz">Plz</label> <input name="plz" type="text"
+						class="form-control" placeholder="plz" wicket:id="plz" />
+				</div>
+				<div class="form-group col-md-6">
+					<label for="ort">Ort</label> <input name="ort" type="text"
+						class="form-control" placeholder="ort" wicket:id="ort" />
+				</div>
+				</div>
+				<div class="form-group">
+					<label for="land">Land</label> 
+					<select class="form-control" wicket:id="laenderSelect"> </select>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<h3>Kontakt</h3>
+				<div class="form-group">
+					<label for="email">Email</label> <input name="email" type="text"
+						class="form-control" placeholder="email" wicket:id="email" />
+				</div>
+				<div class="form-group">
+					<label for="telefon">Telefon</label> <input name="telefon"
+						type="text" class="form-control" placeholder="telefon"
+						wicket:id="telefon" />
+				</div>
+				<div class="form-group">
+					<label for="mobil">Mobil</label> <input name="mobil" type="text"
+						class="form-control" placeholder="mobil" wicket:id="mobil" />
+				</div>
+			</div>
+		</div>
+		<div class="form-row row">
+		<div class="col-md-12">
+		<button type="submit" class="btn btn-primary">Speichern</button>
+		</div>
+		</div>
+	</form>
+</wicket:panel>
+
+</html>

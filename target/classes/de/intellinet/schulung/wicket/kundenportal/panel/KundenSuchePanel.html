@@ -1,0 +1,24 @@
+<html xmlns:wicket="http://wicket.apache.org">
+
+
+<wicket:panel>
+<h2>Suche Kunden</h2>
+			  <form wicket:id="sucheKunden" id="from" >
+            <div class="form-group">
+			<label for="name">Name</label> <input name="name" type="text"
+				class="form-control" placeholder="name" wicket:id="name" />
+		</div>
+		<div class="form-group">
+			<label for="vorname">Vorname</label> <input name="vorname"
+				type="text" class="form-control" placeholder="vorname"
+				wicket:id="vorname" />
+		</div>
+  <!--           <th><input wicket:id="geburtsdatum"></th> -->
+   
+       <input type="submit" value="Such" />
+       
+</form>
+<div wicket:id="kundenUebersicht"></div>
+
+</wicket:panel>
+</html>
